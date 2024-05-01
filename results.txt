@@ -1,0 +1,6 @@
+Iterations (n): 16
+
+Held-Karp Runtimes (ms): [0 0 0 0 2 7 13 23 61 158 471 1281 3406 8580 ]
+Local Search Runtimes (ms): [0 0 0 1 1 3 2 3 3 4 6 8 12 13 ]
+Held-Karp Tour Lengths: [8 90 44 54 82 46 66 114 110 88 107 136 123 195 ]
+Local Search Tour Lengths: [8 90 83 95 196 99 172 288 208 203 223 296 334 420 ]

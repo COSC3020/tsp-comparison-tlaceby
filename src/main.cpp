@@ -41,8 +41,8 @@ int main() {
     chrono::duration<double> elapsed =
         chrono::duration_cast<chrono::seconds>(currentTime - startTime);
 
-    if (elapsed.count() >= ONE_HOUR) {
-      cout << "Time limit of 1 hour reached. Stopping experiments." << endl;
+    if (elapsed.count() >= (ONE_HOUR * 8)) {
+      cout << "Time limit of 8 hour reached. Stopping experiments." << endl;
       break;
     }
 
@@ -77,6 +77,8 @@ int main() {
     cout << "Held-Karp Tour Length: " << hkTourLength << endl;
     cout << "Local Search Tour Length: " << lsTourLength << endl;
     cout << endl;
+
+    writeResultsToFile(hkRuntimes, lsRuntimes, hkTourLengths, lsTourLengths);
   }
 
   writeResultsToFile(hkRuntimes, lsRuntimes, hkTourLengths, lsTourLengths);
@@ -88,7 +90,7 @@ void writeResultsToFile(const vector<long long>& hkRuntimes,
                         const vector<int>& hkTourLengths,
                         const vector<int>& lsTourLengths) {
   ofstream outFile("./results.txt");
-  outFile << "Iterations (n): " << to_string(lsRuntimes.size()) << "\n\n";
+  outFile << "Iterations (n): " << to_string(lsRuntimes.size() + 2) << "\n\n";
   outFile << "Held-Karp Runtimes (ms): ";
   outFile << "[";
   for (long long runtime : hkRuntimes) {
