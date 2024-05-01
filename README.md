@@ -24,7 +24,20 @@ Local Search found. Why is this?
 Add the code to run your experiments, graphs, and an explanation of what you did
 to this markdown file.
 
-## Instructions to build
+## Reproductability
+If you want to reproduce the code then please make sure you have `g++` and patience xD. I took my javascript code and ported it to c++ as I was running into issues with the javascript `Map()` running out of memory way too quickly.
+
+
 ```bash
 g++ -std=c++20 -o main src/main.cpp src/tsp-hk.cpp src/tsp-ls.cpp && ./main
 ```
+To create graphs just run 
+```bash
+node graphs.js
+```
+
+## Analysis
+
+- Held Karp SLOW AF but better only linearly.
+- Local Search is must faster and it's size grows at a polynomial rate. It's less accurate however for the insane performance gains as $n > 10$ it's not bad.
+

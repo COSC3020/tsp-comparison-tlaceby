@@ -83,7 +83,6 @@ int main() {
   return 0;
 }
 
-// Function to write the results to a text file
 void writeResultsToFile(const vector<long long>& hkRuntimes,
                         const vector<long long>& lsRuntimes,
                         const vector<int>& hkTourLengths,
