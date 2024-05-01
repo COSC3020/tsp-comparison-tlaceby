@@ -27,6 +27,15 @@ to this markdown file.
 ## Reproductability
 If you want to reproduce the code then please make sure you have `g++` and patience xD. I took my javascript code and ported it to c++ as I was running into issues with the javascript `Map()` running out of memory way too quickly.
 
+You will need a plotly account and create a `.env` file with a `USERNAME & PASSWORD` variables.
+
+Here is an example:
+```.env
+PASSWORD=34nkhrkndfi3j53kjn54
+USERNAME=lars_whatever
+```
+
+Then you can build the c++ project and execute the main executable. This will test for one hour atleast. After I gather data for one hour of work, I want to have this run for a entire day.
 
 ```bash
 g++ -std=c++20 -o main src/main.cpp src/tsp-hk.cpp src/tsp-ls.cpp && ./main
@@ -40,4 +49,3 @@ node graphs.js
 
 - Held Karp SLOW AF but better only linearly.
 - Local Search is must faster and it's size grows at a polynomial rate. It's less accurate however for the insane performance gains as $n > 10$ it's not bad.
-
