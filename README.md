@@ -258,7 +258,7 @@ The code to generate the graphs is also much simpler as I am outputing one graph
 | 1 Minute   |         54 |
 | 10 Minutes |         97 |
 | 30 Minutes |        128 |
-| 1 Hour     |        ??? |
+| 1 Hour     |        151 |
 
 It is important to note that this time also includes unrelated factors such as:
 
