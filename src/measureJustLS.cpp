@@ -57,20 +57,25 @@ int main(int argc, char** args) {
 
   srand(time(nullptr));
   ofstream outFile("tsp_ls-" + to_string(runtime) + "-min.txt");
-  outFile.clear();  // rm file contents // no append
+  outFile.clear();  // clear the file contents (not append)
 
   cout << "\nRunning test for " << runtime << " minutes\n";
   auto startTime = high_resolution_clock::now();
 
   int size = 5;
   while (true) {
-    if (duration<double, ratio<60>>(high_resolution_clock::now() - startTime)
-            .count() >= runtime) {
+    measureLocalSearch(size, outFile);
+
+    auto currentTime = high_resolution_clock::now();
+    auto elapsed = duration_cast<minutes>(currentTime - startTime).count();
+    cout << "Elapsed Time: " << elapsed << " minutes after processing size "
+         << size << ".\n";
+
+    size++;
+    if (elapsed >= runtime) {
       cout << "Time limit of " << runtime << " minutes reached.\n";
       break;
     }
-
-    measureLocalSearch(size++, outFile);
   }
 
   string fn("node graph-tsp-ls.js " + to_string(runtime));
