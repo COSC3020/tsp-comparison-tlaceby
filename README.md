@@ -170,7 +170,7 @@ function parseData() {
 After some **beautiful** javascript code which parses the txt file generated with the **c++** program, I was set to use the **Plotly** library for graph generation.
 
 ![Comparison with 17 Iterations](./assets/tsp-comparison-17.png "17 Iterations TSP Comparison")
-![Comparison with 13 Iterations](./assets/dist_i-23.png "Distances Compared 23 Iterations")
+![Comparison with 23 Iterations](./assets/dist_i-23.png "Distances Compared 23 Iterations")
 
 ### Comparing Held-Karp and Local-Search
 
