@@ -268,16 +268,16 @@ It is important to note that this time also includes unrelated factors such as:
 However the data being generated does not include these factors. This means if these operations were instant, I would be able to squeze our around 5x more iterations per time frame. Graphed below are the runtime **average** and **spreads** for computing the **Local-Search** tour length for up to a $nxn$ graph where $n$ is the number of iterations done in $x$ minutes.
 
 Here is the **1 Minute** runtime plot which was able to handle a whole $54x54$ distance matrix.
-![TSP-LocalSearch-1-Minute](./tsp-comparison-tlaceby/assets/tsp-ls-plot-1.png "TSP-LocalSearch-1-Minute")
+![TSP-LocalSearch-1-Minute](https://github.com/COSC3020/tsp-comparison-tlaceby/blob/main/assets/tsp-ls-plot-1.png "TSP-LocalSearch-1-Minute")
 
 Here is the **10 Minute** runtime plot which was able to handle a whole $97x97$ distance matrix.
-![TSP-LocalSearch-10-Minutes](./tsp-comparison-tlaceby/assets/tsp-ls-plot-10.png "TSP-LocalSearch-10-Minutes")
+![TSP-LocalSearch-10-Minutes](https://github.com/COSC3020/tsp-comparison-tlaceby/blob/main/assets/tsp-ls-plot-10.png "TSP-LocalSearch-10-Minutes")
 
 Here is the **30 Minute** runtime plot which was able to handle a whole $128x128$ distance matrix.
-![TSP-LocalSearch-30-Minutes](./tsp-comparison-tlaceby/assets/tsp-ls-plot-30.png "TSP-LocalSearch-30-Minute")
+![TSP-LocalSearch-30-Minutes](https://github.com/COSC3020/tsp-comparison-tlaceby/blob/main/assets/tsp-ls-plot-30.png "TSP-LocalSearch-30-Minute")
 
 Lastly is the **60 Minute** runtime plot which was able to handle a whole $nxn$ distance matrix.
-![TSP-LocalSearch-60-Minutes](./tsp-comparison-tlaceby/assets/tsp-ls-plot-60.png "TSP-LocalSearch-60-Minute")
+![TSP-LocalSearch-60-Minutes](https://github.com/COSC3020/tsp-comparison-tlaceby/blob/main/assets/tsp-ls-plot-60.png "TSP-LocalSearch-60-Minute")
 
 ### Final Thoughts
 
