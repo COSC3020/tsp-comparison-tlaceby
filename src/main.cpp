@@ -5,8 +5,6 @@
 #include <iostream>
 #include <vector>
 
-#define ONE_HOUR 60 * 60
-
 void writeResultsToFile(const vector<long long>& hkRuntimes,
                         const vector<long long>& lsRuntimes,
                         const vector<int>& hkTourLengths,
@@ -23,6 +21,7 @@ vector<vector<int>> generateRandomDistanceMatrix(int size) {
       }
     }
   }
+
   return matrix;
 }
 
@@ -48,7 +47,6 @@ int main() {
 
     vector<vector<int>> distances = generateRandomDistanceMatrix(size++);
 
-    // Record the start time for Held-Karp
     auto hkStartTime = chrono::high_resolution_clock::now();
     int hkTourLength = tsp_hk(distances);
     auto hkEndTime = chrono::high_resolution_clock::now();
@@ -56,7 +54,6 @@ int main() {
         chrono::duration_cast<chrono::milliseconds>(hkEndTime - hkStartTime)
             .count();
 
-    // Record the start time for Local Search
     auto lsStartTime = chrono::high_resolution_clock::now();
     int lsTourLength = tsp_ls(distances);
     auto lsEndTime = chrono::high_resolution_clock::now();

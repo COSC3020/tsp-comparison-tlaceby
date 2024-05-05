@@ -9,6 +9,8 @@
 #include <unordered_set>
 #include <vector>
 
+#define ONE_HOUR 60 * 60
+
 using namespace std;
 
 int heldKarp(const unordered_set<int>& cities, int start,
