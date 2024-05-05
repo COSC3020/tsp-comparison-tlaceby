@@ -277,7 +277,7 @@ Here is the **30 Minute** runtime plot which was able to handle a whole $128x128
 ![TSP-LocalSearch-30-Minutes](./assets/tsp-ls-plot-30.png "TSP-LocalSearch-30-Minute")
 
 Lastly is the **60 Minute** runtime plot which was able to handle a whole $nxn$ distance matrix.
-![TSP-LocalSearch-30-Minutes](./assets/tsp-ls-plot-30.png "TSP-LocalSearch-30-Minute")
+![TSP-LocalSearch-30-Minutes](assets/tsp-ls-plot-30.png "TSP-LocalSearch-30-Minute")
 
 ### Final Thoughts
 
