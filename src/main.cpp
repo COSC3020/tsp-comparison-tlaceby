@@ -40,8 +40,8 @@ int main() {
     chrono::duration<double> elapsed =
         chrono::duration_cast<chrono::seconds>(currentTime - startTime);
 
-    if (elapsed.count() >= (ONE_HOUR * 8)) {
-      cout << "Time limit of 8 hour reached. Stopping experiments." << endl;
+    if (elapsed.count() >= (ONE_HOUR * 12)) {
+      cout << "Time limit of 12 hours reached. Stopping experiments." << endl;
       break;
     }
 
