@@ -27,7 +27,9 @@ to this markdown file.
 
 ## Resources
 
-https://www.codecademy.com/resources/docs/markdown/tables
+- GPT3 for helping me optimize the c++ code and figure out random number generation for the shuffling stage.
+- Stackoverflow was used for a bunch of small things related to file output in c++ and small compile issues I was having.
+- https://www.codecademy.com/resources/docs/markdown/tables
 
 ## Reproductability
 
